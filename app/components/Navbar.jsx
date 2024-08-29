@@ -57,7 +57,7 @@ export default function Navbar() {
         variants={buttonVariants}
         className="w-full sm:w-auto"
       >
-        <div className="bg-[#d71214] px-4 sm:px-6 py-2 sm:py-3 rounded-3xl text-white uppercase font-bold shadow-lg shadow-red-400 text-center sm:text-left">
+        <div className="bg-[#d71214] glass px-4 sm:px-6 py-2 sm:py-3 rounded-3xl text-white uppercase font-bold shadow-lg shadow-red-400 text-center sm:text-left">
           Tony's Casino
         </div>
       </motion.div>
