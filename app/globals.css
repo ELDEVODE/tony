@@ -2,13 +2,79 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .bgimg {
   background-image: url('/images/pokerChip.png');
   height: 100px;
   width: 100px;
 }
 
-.CFont {
-  font-family: 'La Vie Boheme', sans-serif;
+.bg2o {
+  background-image: url('/images/pokerChip.png');
+  height: 100px;
+  width: 100px;
+}
+
+.eggEffectContainer {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 50px auto;
+  perspective: 1000px;
+}
+
+.eggEffectImageWrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+}
+
+.eggEffectImageHalf {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.5s;
+}
+
+.eggEffectTopHalf {
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+  z-index: 2; /* Ensure top half is above text */
+}
+
+.eggEffectBottomHalf {
+  clip-path: polygon(0 50%, 100% 50%, 100% 100%, 0 100%);
+}
+
+.eggEffectContainer:hover .eggEffectTopHalf {
+  transform: translateY(-90px) rotate(50deg);
+}
+
+.eggEffectHoverText {
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, 0%) scale(0.5);
+  background-color: #d71214;
+  color: white; /* Changed to white for better visibility on red background */
+  padding: 10px 20px;
+  border-radius: 20px;
+  opacity: 0;
+  transition: all 0.5s;
+  pointer-events: none;
+  white-space: nowrap;
+  z-index: 1; /* Ensure text is below top half but above bottom half */
+}
+
+.eggEffectContainer:hover .eggEffectHoverText {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* New rule to ensure bottom half stays behind */
+.eggEffectBottomHalf {
+  z-index: 0;
 }
