@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.CFont {
+  font-family: 'La Vie Boheme', sans-serif;
+}
+
 .bgimg {
   background-image: url('/images/pokerChip.png');
   height: 100px;
