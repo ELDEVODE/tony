@@ -21,7 +21,7 @@ export default function Hero() {
     h-scren pt-20"
     >
       <motion.h1
-        className="text-7xl md:text-[200px] CFont text-[#d71214] font-bold text-center"
+        className="text-7xl md:text-[200px] CFont text-[#E38412] font-bold text-center"
         variants={entranceAnimation}
         initial="hidden"
         whileInView="visible"
@@ -29,7 +29,7 @@ export default function Hero() {
         $Tony
       </motion.h1>
       <motion.p
-        className="text-2xl CFont text-[#d71214] font-bold text-center max-w-3xl"
+        className="text-2xl CFont text-[#fe9516] font-bold text-center max-w-3xl"
         variants={entranceAnimation}
         initial="hidden"
         whileInView="visible"
@@ -43,7 +43,7 @@ export default function Hero() {
         whileInView="visible"
         variants={entranceAnimation}
         src="/images/heroImg.png"
-        className="w-[50] h-[50]"
+        className="w-[50] h-[50] mb-20"
       />
     </div>
   );

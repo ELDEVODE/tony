@@ -1,13 +1,13 @@
 export default function Tokenomics() {
   return (
     <div className="flex flex-col items-center justify-center h-scren CFont p-8">
-      <div className="p-4 bg-[#d71214] rounded-2xl">
+      <div className="p-4 bg-[#E38412] rounded-2xl">
         <h1 className="text-5xl md:text-[120px] CFont text-[#fff] font-bold text-center">
           Tokenomics
         </h1>
       </div>
       <div>
-        <div className="bg-[#d71214] rounded-[100px] flex flex-row justify-between p-4 mt-4  shadow-inner shadow-[#fc9191] drop-shadow-xl">
+        <div className="bg-[#E38412] rounded-[100px] flex flex-row justify-between p-4 mt-4  shadow-inner shadow-[#fc9191] drop-shadow-xl">
           <p className="p-3 text-xs md:text-2xl font-bold text-white">
             0x8b6fE6bA4b2F2BDFE1d1f9D5C2E5F2C3D6F1a0A7
           </p>
@@ -29,13 +29,13 @@ export default function Tokenomics() {
         ].map((item, index) => (
           <div
             key={index}
-            className="card rounded-[50px] flex flex-col items-center justify-center p-4 shadow-inner shadow-[#fff] drop-shadow-xl border-[10px] border-[#d71214]"
+            className="card rounded-[50px] flex flex-col items-center justify-center p-4 shadow-inner shadow-[#fff] drop-shadow-xl border-[10px] border-[#E38412]"
           >
             <img
               src={item.src}
-              className="w-[50] h-[50] border-[10px] border-[#d71214] rounded-3xl"
+              className="w-[50] h-[50] border-[10px] border-[#E38412] rounded-3xl"
             />
-            <p className="p-3 text-xs md:text-2xl font-bold text-[#d71214]">
+            <p className="p-3 text-xs md:text-2xl font-bold text-[#E38412]">
               {item.text}{" "}
             </p>
           </div>
