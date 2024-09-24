@@ -1,6 +1,9 @@
 export default function Tokenomics() {
   return (
-    <div className="flex flex-col items-center justify-center h-scren CFont p-8">
+    <div
+      id="Tokenomics"
+      className="flex flex-col items-center justify-center h-scren CFont p-8"
+    >
       <div className="p-4 bg-[#E38412] rounded-2xl">
         <h1 className="text-5xl md:text-[120px] CFont text-[#fff] font-bold text-center">
           Tokenomics

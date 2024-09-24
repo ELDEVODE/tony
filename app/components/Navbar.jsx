@@ -29,6 +29,17 @@ const buttonVariants = {
 };
 
 export default function Navbar() {
+  const socialLinks = [
+    {
+      icon: <FaTelegramPlane />,
+      url: "https://t.me/YourTelegramUsername", // Replace with your Telegram link
+    },
+    {
+      icon: <FaXTwitter />,
+      url: "https://x.com/tonyonsolanaa", // Replace with your Twitter/X link
+    },
+  ];
+
   return (
     <motion.div
       initial={{ opacity: 0, y: -50 }}
@@ -38,21 +49,25 @@ export default function Navbar() {
     >
       {/* social links */}
       <div className="flex flex-row space-x-4 mb-4 sm:mb-0">
-        {[<FaTelegramPlane />, <FaXTwitter />, <FaInstagram />].map(
-          (Icon, index) => (
+        {socialLinks.map((social, index) => (
+          <a
+            href={social.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            key={index}
+          >
             <motion.div
-              key={index}
               className="bgimg flex items-center justify-center bg-cover w-10 h-10 sm:w-[100px] sm:h-[100px] rounded-full"
               variants={iconVariants}
               animate="animate"
               whileHover="hover"
             >
-              {React.cloneElement(Icon, {
+              {React.cloneElement(social.icon, {
                 className: "text-2xl sm:text-3xl text-white",
               })}
             </motion.div>
-          )
-        )}
+          </a>
+        ))}
       </div>
       {/* long button */}
       <motion.div

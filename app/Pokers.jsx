@@ -38,12 +38,12 @@ export default function Pokers() {
       <motion.div variants={itemVariants}>
         <EggEffect imageUrl="/images/card2.png" hoverText="Tokenomics" />
       </motion.div>
-      <motion.div variants={itemVariants}>
+      {/* <motion.div variants={itemVariants}>
         <EggEffect imageUrl="/images/card2.png" hoverText="How to buy?" />
-      </motion.div>
-      <motion.div variants={itemVariants}>
+      </motion.div> */}
+      {/* <motion.div variants={itemVariants}>
         <EggEffect imageUrl="/images/card2.png" hoverText="Faq" />
-      </motion.div>
+      </motion.div> */}
     </motion.div>
   );
 }
